@@ -119,6 +119,9 @@ ul {
 }
 /* Hero на майбутнє */
 .hero {
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
@@ -130,20 +133,23 @@ ul {
   font-weight: 900px;
   font-size: 44px;
   line-height: 1.36;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
 
 /* Feature */
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  margin-top: 94px;
+  margin-bottom: 94px;
 }
 .section.no-padding {
-  padding-top: 94px;
-  padding-bottom: 0px;
+  margin-top: 94px;
+  margin-bottom: 0px;
 }
-
+.section.color {
+  background-color: #f5f4fa;
+}
 .feature-list {
   display: flex;
   text-align: center;
@@ -365,17 +371,24 @@ ul {
 }
 
 /* Portfolio  */
+.our-projects {
+  margin-top: 93px;
+  margin-bottom: 94px;
+}
+
+.button-class {
+  margin-bottom: 50px;
+  text-align: center;
+}
 
 .button-portfolio + .button-portfolio {
-  margin-left: 8px;
   color: var(--primary-text-color);
   background-color: #f5f4fa;
   font-family: inherit;
   font-weight: 500px;
   font-size: 16px;
   line-height: 1.63em;
-  display: inline-block;
-  text-align: center;
+
   border-radius: 4px;
   border: 1px solid transparent;
   min-width: 130px;
@@ -386,11 +399,12 @@ ul {
 .button-portfolio:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-  display: inline-block;
 }
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 .project {
