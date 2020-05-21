@@ -10,18 +10,20 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+      href="node_modules/modern-normalize/modern-normalize.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
       <nav class="container main-nav">
-        <a href="index.html" class="logo">
+        <a href="./index.html" class="logo">
           <span class="logo-accent">Web</span>Studio
         </a>
         <ul class="site-nav">
-          <li class="item"><a href="" class="link current"> Студия </a></li>
+          <li class="item">
+            <a href="./index.html" class="link current"> Студия </a>
+          </li>
           <li class="item">
             <a href="./Портфолио.html" class="link"> Портфолио </a>
           </li>
@@ -41,11 +43,10 @@
     </header>
     <main>
       <div class="hero">
-        <img src="./images/Header-img.jpg" alt="Логотип компании" width="750" />
-        <h1 class="hero-title">Ефективные решения для вашего бизнеса</h1>
+        <h1 class="hero-title">Эфективные решения для вашего бизнеса</h1>
         <a href="" class="button"> Заказать услугу </a>
       </div>
-      <section class="section no-padding">
+      <section class="section">
         <div class="container">
           <ul class="feature-list">
             <li class="item">
@@ -83,31 +84,34 @@
           </ul>
         </div>
       </section>
-      <section class="section">
+      <section class="section border">
         <div class="container">
           <h2 class="section-name">Чем мы занимаемся</h2>
           <ul class="work-list">
             <li class="item">
               <img
+                class="foto"
                 src="./images/desktop.jpg"
                 alt="Декстопные приложения"
-                width="380"
+                width="370"
               />
               <h3 class="title">Десктопные приложения</h3>
             </li>
             <li class="item">
               <img
+                class="foto"
                 src="./images/smartphone.jpg"
                 alt="Мобильные приложения"
-                width="380"
+                width="370"
               />
               <h3 class="title">Мобильные приложения</h3>
             </li>
             <li class="item">
               <img
+                class="foto"
                 src="./images/display.jpg"
                 alt="Дизайнерские решения"
-                width="380"
+                width="370"
               />
               <h3 class="title">Дизайнерские решения</h3>
             </li>
@@ -119,7 +123,7 @@
           <h2 class="section-name">Наша команда</h2>
           <ul class="feature-list">
             <li class="team">
-              <img src="./images/John.jpg" alt="Джон" width="278" />
+              <img src="./images/John.jpg" alt="Джон" width="270" />
               <h3 class="section-heroes">John Smith</h3>
               <p class="heroes-name">Product Designer</p>
               <ul class="link-social">
@@ -138,7 +142,7 @@
               </ul>
             </li>
             <li class="team">
-              <img src="./images/Marta.jpg" alt="Марта" width="278" />
+              <img src="./images/Marta.jpg" alt="Марта" width="270" />
               <h3 class="section-heroes">Marta Steward</h3>
               <p class="heroes-name">Frontend Developer</p>
               <ul class="link-social">
@@ -157,7 +161,7 @@
               </ul>
             </li>
             <li class="team">
-              <img src="./images/Robert.jpg" alt="Роберт" width="278" />
+              <img src="./images/Robert.jpg" alt="Роберт" width="270" />
               <h3 class="section-heroes">Robert Jakls</h3>
               <p class="heroes-name">Marketing</p>
               <ul class="link-social">
@@ -176,7 +180,7 @@
               </ul>
             </li>
             <li class="team">
-              <img src="./images/Martin.jpg" alt="Мартин" width="278" />
+              <img src="./images/Martin.jpg" alt="Мартин" width="270" />
               <h3 class="section-heroes">Martin Doe</h3>
               <p class="heroes-name">UI Designer</p>
               <ul class="link-social">
@@ -250,7 +254,7 @@
             <br />
           </div>
           <div class="connection-footer">
-            <p class="connection"><b>Присоединяйтесь</b></p>
+            <b class="connection">Присоединяйтесь</b>
             <ul class="link-social">
               <li class="item">
                 <a href="" class="link" aria-label="Instagram">Instagram</a>
