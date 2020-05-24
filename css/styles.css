@@ -5,7 +5,7 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 :root {
@@ -19,7 +19,6 @@ html {
   margin: 0 auto;
   background-color: #e5e5e5;
   color: #757575;
-  font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
 ul {
@@ -77,7 +76,6 @@ ul {
   margin-left: 50px;
 }
 .site-nav .link {
-  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -87,6 +85,7 @@ ul {
   font-size: 14px;
   line-height: 1.14em;
   letter-spacing: 0.02em;
+  font-family: Roboto;
 }
 
 .site-nav .link:hover,
@@ -101,7 +100,6 @@ ul {
   display: flex;
   margin-left: auto;
 }
-
 .auth-nav .item + .item {
   margin-left: 30px;
 }
@@ -111,6 +109,7 @@ ul {
   font-size: 14px;
   line-height: 1.14em;
   letter-spacing: 0.02em;
+  font-family: Roboto;
 }
 
 .auth-nav .link:hover,
@@ -119,18 +118,17 @@ ul {
 }
 /* Hero на майбутнє */
 .hero {
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 200px;
+  height: 600px;
   text-align: center;
-  width: 646px;
   background-color: rgba(47, 48, 58, 0.8);
 }
 
 .hero-title {
   margin-top: 0px;
   margin-bottom: 0px;
-  display: inline-block;
-  padding-bottom: 46px;
+  display: block;
+  margin-bottom: 46px;
 
   color: #ffffff;
   font-weight: 900px;
@@ -151,7 +149,6 @@ ul {
 }
 .feature-list {
   display: flex;
-  text-align: center;
 }
 .feature-list .item + .item {
   margin-left: 30px;
@@ -213,6 +210,7 @@ ul {
   vertical-align: top;
   margin-top: 0px;
   margin-bottom: 50px;
+  font-family: Roboto;
 }
 
 .section-title {
@@ -222,6 +220,8 @@ ul {
   line-height: 1.14em;
   margin-top: 30px;
   margin-bottom: 0px;
+  text-transform: uppercase;
+  font-family: Roboto;
 }
 
 .section-heroes {
@@ -389,6 +389,12 @@ ul {
 }
 
 /* Portfolio  */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .card-image {
   display: block;
   border-top-left-radius: 5px;
@@ -403,7 +409,6 @@ ul {
   box-sizing: border-box;
   padding-top: 20px;
   padding-left: 24px;
-  padding-right: 24px;
   padding-bottom: 20px;
 }
 .our-projects {
