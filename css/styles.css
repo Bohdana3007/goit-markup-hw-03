@@ -37,10 +37,11 @@ ul {
 у футері найнижчий рядок color: rgba(255, 255, 255, 0.4);
 */
 .main-nav {
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .container {
   margin-left: auto;
